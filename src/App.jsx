@@ -4,6 +4,8 @@ import Main from './composents/MainTitres + Barre de Recherche'
 import MainResultats from './composents/MainResultats'
 import Footer from './composents/Footer'
 
+import { Link } from 'react-router-dom';
+
 // import { useState } from 'react'
 
 function App() {

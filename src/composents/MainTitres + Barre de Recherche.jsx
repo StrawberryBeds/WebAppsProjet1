@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import sample_data from './../assets/sample_data'
 
+import { Link } from 'react-router-dom';
+
 function Main() {
 
     const [searchQuery, setSearchQuery] = useState('');
