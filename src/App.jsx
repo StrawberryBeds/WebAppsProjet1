@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './composents/Header'
-import Main from './composents/Main'
+import Main from './composents/MainTitres + Barre de Recherche'
 import Footer from './composents/Footer'
 
 import { useState } from 'react'
