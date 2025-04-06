@@ -3,7 +3,7 @@ import sample_data from './../assets/sample_data'
 
 import { Link } from 'react-router-dom';
 
-function Main() {
+function Search() {
 
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -50,4 +50,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Search;
