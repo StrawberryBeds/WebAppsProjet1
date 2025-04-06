@@ -59,12 +59,3 @@ function Search({ onSearch }) {
 }
 
 export default Search;
-
-{/* <div className="search-results">
-                {filteredData.map(item => (
-                    <div key={item.id} className="search-result-item">
-                        <h2>{item.titre}</h2>
-                        <p>{item.description}</p>
-                    </div>
-                ))}
-            </div> */}
