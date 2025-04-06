@@ -5,15 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AlertesEtAvis from './pages/AlertesEtAvis'
 import Alerte from './pages/Alerte'
 
-// import Main from './composents/MainTitres + Barre de Recherche'
-// import MainResultats from './composents/MainResultats'
-
 import { Link } from 'react-router-dom';
 
-// import { useState } from 'react'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <Router>
@@ -26,7 +21,7 @@ function App() {
 
       {/* <Main></Main>
       <MainResultats></MainResultats> */}
-      
+
       <Footer></Footer>
     </Router>
   )

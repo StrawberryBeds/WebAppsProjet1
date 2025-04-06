@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import sample_data from './../assets/sample_data'
-
-import { Link } from 'react-router-dom';
 
 function Search() {
 
@@ -37,6 +34,11 @@ function Search() {
                     </div>
                 </div>
             </div>
+        </>
+    );
+}
+
+export default Search;
 
             {/* <div className="search-results">
                 {filteredData.map(item => (
@@ -46,8 +48,3 @@ function Search() {
                     </div>
                 ))}
             </div> */}
-        </>
-    );
-}
-
-export default Search;
