@@ -14,6 +14,36 @@ function Footer() {
                 </ul>
             </div>
 
+            <div class="row">
+                <div class="col-12 list-toggle top-separator">
+                    <h3 class="list-heading d-md-none text-white" role="button" aria-expanded="false" aria-controls="collapseArrondissements" data-collapse-arrondissements="true">Arrondissements</h3>
+                    <h3 class="list-heading d-none d-md-block text-white"> Arrondissements</h3>
+                    <div class="collapse" id="collapseArrondissements">
+                        <ul class="list-unstyled list-4-columns-md mb-2 mb-md-8">
+                            <li><a href="https://montreal.ca/ahuntsic-cartierville">Ahuntsic-Cartierville</a></li>
+                            <li><a href="https://montreal.ca/anjou">Anjou</a></li><
+                                li><a href="https://montreal.ca/cote-des-neiges-notre-dame-de-grace">Côte-des-Neiges–Notre-Dame-de-Grâce</a></li>
+                            <li><a href="https://montreal.ca/lile-bizard-sainte-genevieve">L'Île-Bizard–Sainte-Geneviève</a></li>
+                            <li><a href="https://montreal.ca/lachine">Lachine</a></li
+                            ><li><a href="https://montreal.ca/lasalle">LaSalle</a></li>
+                            <li><a href="https://montreal.ca/le-plateau-mont-royal">Le Plateau-Mont-Royal</a></li>
+                            <li><a href="https://montreal.ca/le-sud-ouest">Le Sud-Ouest</a></li>
+                            <li><a href="https://montreal.ca/mercier-hochelaga-maisonneuve">Mercier–Hochelaga-Maisonneuve</a></li><
+                                li><a href="https://montreal.ca/montreal-nord">Montréal-Nord</a></li>
+                            <li><a href="https://montreal.ca/outremont">Outremont</a></li>
+                            <li><a href="https://montreal.ca/pierrefonds-roxboro">Pierrefonds-Roxboro</a></li>
+                            <li><a href="https://montreal.ca/riviere-des-prairies-pointe-aux-trembles">Rivière-des-Prairies–Pointe-aux-Trembles</a></li>
+                            <li><a href="https://montreal.ca/rosemont-la-petite-patrie">Rosemont–La Petite-Patrie</a></li>
+                            <li><a href="https://montreal.ca/saint-laurent">Saint-Laurent</a></li>
+                            <li><a href="https://montreal.ca/saint-leonard">Saint-Léonard</a></li>
+                            <li><a href="https://montreal.ca/verdun">Verdun</a></li>
+                            <li><a href="https://montreal.ca/ville-marie">Ville-Marie</a></li>
+                            <li><a href="https://montreal.ca/villeray-saint-michel-parc-extension">Villeray–Saint-Michel–Parc-Extension</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <div>
                 <nav className="row footer-last align-items-center justify-content-center justify-content-lg-between" aria-labelledby="footer-legal-section">
                     <div className="col-auto mb-4 mb-lg-0">
