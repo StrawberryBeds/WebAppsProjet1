@@ -5,6 +5,7 @@ function Footer() {
                 <a href="#main-content" className="link-page-top ml-auto shell-scroll-trigger">Haut de page</a>
             </div>
 
+            <div className="row">
             <div className="col-12 col-md-4 col-lg-2 top-separator">
                 <h3 className="list-heading text-white">Mon compte</h3>
                 <ul className="list-unstyled mb-4 mb-md-8">
@@ -12,6 +13,61 @@ function Footer() {
                     <li><a href="/avis-et-alertes">Avis et alertes</a></li>
                     <li><a href="/demarches/creer-un-compte">Créer mon compte</a></li>
                 </ul>
+            </div>
+
+
+                <div class="col-12 col-md-4 col-lg-2 top-separator">
+                    <h3 class="list-heading text-white">Communiquer avec nous</h3>
+                    <ul class="list-unstyled mb-4 mb-md-8">
+                        <li><a href="/services/acces-linformation">Demande d'accès à l'information</a></li>
+                        <li><a href="/nous-joindre">Nous joindre</a></li>
+                        <li><a href="/signaler-un-probleme">Signaler un problème</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12 col-md-4 col-lg-2 top-separator">
+                    <h3 class="list-heading text-white">Travailler avec nous</h3>
+                    <ul class="list-unstyled mb-4 mb-md-8"><li>
+                        <a href="https://montreal.ca/services/appels-doffres-et-contrats">Appels d'offres</a></li>
+                        <li><a href="/articles/offres-demploi-2944">Emplois</a></li>
+                        <li><a href="http://ville.montreal.qc.ca/portal/page?_pageid=4657,89479628&amp;_dad=portal&amp;_schema=PORTAL">Fournisseurs</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12 col-md-4 col-lg-2 top-separator">
+                    <h3 class="list-heading text-white">Visiter Montréal</h3>
+                    <ul class="list-unstyled mb-4 mb-md-8">
+                        <li><a href="/lieux/hotel-de-ville">Hôtel de ville</a></li>
+                        <li><a href="/services/mtlwifi-acces-gratuit-internet">MTLWiFi</a></li>
+                        <li><a href="https://www.mtl.org/fr">Tourisme Montréal</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12 col-md-4 col-lg-2 top-separator">
+                    <h3 class="list-heading text-white">À propos de nous</h3>
+                    <ul class="list-unstyled mb-4 mb-md-8">
+                        <li><a href="https://ville.montreal.qc.ca/portal/page?_pageid=5798,43301618&amp;_dad=portal&amp;_schema=PORTAL">Avis publics</a></li>
+                        <li><a href="/communiques-de-presse">Communiqués</a></li><li><a href="/sujets/ententes-de-partenariat-et-visibilite">Ententes de partenariat</a></li>
+                        <li><a href="/services/recherche-de-reglements">Règlements</a></li><li><a href="/unites/salle-des-medias">Salle des médias</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12 col-md-4 col-lg-2 top-separator">
+                    <h3 class="list-heading text-white">Nous suivre</h3>
+                    <ul class="list-unstyled list-social-media mb-4 mb-md-8">
+                        <li><a href="https://www.facebook.com/mtlville"><span class="icon icon-social-facebook" aria-hidden="true"></span> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/mtl_ville/">< span class="icon icon-social-instagram" aria-hidden="true"></span> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/ville-de-montr-al"><span class="icon icon-social-linkedin" aria-hidden="true"></span> LinkedIn</a></li>
+                        <li><a href="https://twitter.com/mtl_ville"><span class="icon icon-social-x" aria-hidden="true"></span> X (Twitter)</a></li>
+                        <li><a href="https://www.youtube.com/user/MTLVille"><span class="icon icon-social-youtube" aria-hidden="true"></span> YouTube</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="row">
