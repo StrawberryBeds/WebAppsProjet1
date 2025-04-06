@@ -22,8 +22,14 @@
 }
 
 /* Footer.css */
-.header-container {
+.footer-container {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
+/* .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
