@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import sample_data from './../assets/sample_data.json'
 
 function Main() {
 
