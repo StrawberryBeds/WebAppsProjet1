@@ -9,10 +9,6 @@ function Main() {
         setSearchQuery(event.target.value);
     };
 
-    // const filteredData = sample_data.filter(item =>
-    //     item.name.toLowerCase().includes(searchQuery.toLowerCase())
-    // );
-
     return (
         <>
             <div className="container position-relative">
