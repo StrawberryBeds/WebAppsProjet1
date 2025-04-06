@@ -1,0 +1,223 @@
+            FILTERS
+            <div id="nav-filters" class="section-filters py-2 border-bottom">
+                <div class="container">
+                    <ul class="nav nav-filters dropdown-scroll-container p-1 m-n1">
+                    <li class="nav-item">
+                        <div class="dropdown position-static">
+
+                            {/* ARRONDISEMENT FILTER */}
+                            <button class="chip dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-filter-id="dc_coverage.boroughs.code" data-filter-show-selected-element="true">Arrondissement</button>
+                            <div class="dropdown-menu dropdown-menu-form-group">
+                                <form class="filter-form filter-form-dropdown" method="" data-form="[{&quot;type&quot;:&quot;taxonomy&quot;,&quot;id&quot;:&quot;arrondissements&quot;,&quot;search_field&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;multiselect&quot;,&quot;label&quot;:{&quot;singular&quot;:&quot;Arrondissement&quot;,&quot;plural&quot;:&quot;Arrondissements&quot;},&quot;default_selection&quot;:{&quot;label&quot;:&quot;Arrondissement&quot;,&quot;value&quot;:null}},&quot;items&quot;:[{&quot;code&quot;:&quot;AC&quot;,&quot;name&quot;:&quot;Ahuntsic-Cartierville&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;ANJ&quot;,&quot;name&quot;:&quot;Anjou&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;CDNNDG&quot;,&quot;name&quot;:&quot;Côte-des-Neiges–Notre-Dame-de-Grâce&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;IBZSGV&quot;,&quot;name&quot;:&quot;L'Île-Bizard–Sainte-Geneviève&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;LCH&quot;,&quot;name&quot;:&quot;Lachine&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;LSL&quot;,&quot;name&quot;:&quot;LaSalle&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;PMR&quot;,&quot;name&quot;:&quot;Le Plateau-Mont-Royal&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;SO&quot;,&quot;name&quot;:&quot;Le Sud-Ouest&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;MHM&quot;,&quot;name&quot;:&quot;Mercier–Hochelaga-Maisonneuve&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;MTN&quot;,&quot;name&quot;:&quot;Montréal-Nord&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;OUT&quot;,&quot;name&quot;:&quot;Outremont&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;PFDROX&quot;,&quot;name&quot;:&quot;Pierrefonds-Roxboro&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;RDPPAT&quot;,&quot;name&quot;:&quot;Rivière-des-Prairies–Pointe-aux-Trembles&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;RPP&quot;,&quot;name&quot;:&quot;Rosemont–La Petite-Patrie&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;SLR&quot;,&quot;name&quot;:&quot;Saint-Laurent&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;SLN&quot;,&quot;name&quot;:&quot;Saint-Léonard&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;VRD&quot;,&quot;name&quot;:&quot;Verdun&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;VM&quot;,&quot;name&quot;:&quot;Ville-Marie&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;VSMPE&quot;,&quot;name&quot;:&quot;Villeray–Saint-Michel–Parc-Extension&quot;,&quot;searchField&quot;:&quot;dc_coverage.boroughs.code&quot;,&quot;selected&quot;:false}],&quot;index&quot;:0}]">
+                                    <div class="form-group mb-0">
+                                        <fieldset>
+                                            <legend class="sr-only">Arrondissement</legend>
+                                            <div class="dropdown-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" id="filter-dc_coverage-boroughs-code-AC" name="dc_coverage.boroughs.code" class="custom-control-input" value="AC"></input>
+                                                    <label class="custom-control-label" for="filter-dc_coverage-boroughs-code-AC">Ahuntsic-Cartierville</label>
+                                                    </div>
+                                                    </div>
+                                                    <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="filter-dc_coverage-boroughs-code-ANJ" name="dc_coverage.boroughs.code" class="custom-control-input" value="ANJ"></input>
+                                                <label class="custom-control-label" for="filter-dc_coverage-boroughs-code-ANJ">Anjou</label>
+                                                </div>
+                                                </div>
+                                                <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" id="filter-dc_coverage-boroughs-code-CDNNDG" name="dc_coverage.boroughs.code" class="custom-control-input" value="CDNNDG"></input>
+                                                    <label class="custom-control-label" for="filter-dc_coverage-boroughs-code-CDNNDG">Côte-des-Neiges–Notre-Dame-de-Grâce</label>
+                                                    </div></div><div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" id="filter-dc_coverage-boroughs-code-IBZSGV" name="dc_coverage.boroughs.code" class="custom-control-input" value="IBZSGV"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-IBZSGV">L'Île-Bizard–Sainte-Geneviève</label></input>
+                                                        </div>
+                                                        </div>
+                                                        <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" id="filter-dc_coverage-boroughs-code-LCH" name="dc_coverage.boroughs.code" class="custom-control-input" value="LCH"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-LCH">Lachine</label></input>
+                                                        </div>
+                                                        </div>
+                                                        <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" id="filter-dc_coverage-boroughs-code-LSL" name="dc_coverage.boroughs.code" class="custom-control-input" value="LSL"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-LSL">LaSalle</label></input>
+                                                        </div>
+                                                        </div>
+                                                        <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" id="filter-dc_coverage-boroughs-code-PMR" name="dc_coverage.boroughs.code" class="custom-control-input" value="PMR"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-PMR">Le Plateau-Mont-Royal</label></input>
+                                                            </div>
+                                                            </div>
+                                                            <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" id="filter-dc_coverage-boroughs-code-SO" name="dc_coverage.boroughs.code" class="custom-control-input" value="SO"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-SO">Le Sud-Ouest</label></input>
+                                                                </div></div><div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" id="filter-dc_coverage-boroughs-code-MHM" name="dc_coverage.boroughs.code" class="custom-control-input" value="MHM"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-MHM">Mercier–Hochelaga-Maisonneuve</label></input>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" id="filter-dc_coverage-boroughs-code-MTN" name="dc_coverage.boroughs.code" class="custom-control-input" value="MTN"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-MTN">Montréal-Nord</label></input>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="filter-dc_coverage-boroughs-code-OUT" name="dc_coverage.boroughs.code" class="custom-control-input" value="OUT"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-OUT">Outremont</label></input>
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox" id="filter-dc_coverage-boroughs-code-PFDROX" name="dc_coverage.boroughs.code" class="custom-control-input" value="PFDROX"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-PFDROX">Pierrefonds-Roxboro</label></input>
+                                                                                </div>
+                                                                                </div>
+                                                                                <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                    <input type="checkbox" id="filter-dc_coverage-boroughs-code-RDPPAT" name="dc_coverage.boroughs.code" class="custom-control-input" value="RDPPAT"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-RDPPAT">Rivière-des-Prairies–Pointe-aux-Trembles</label></input>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" id="filter-dc_coverage-boroughs-code-RPP" name="dc_coverage.boroughs.code" class="custom-control-input" value="RPP"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-RPP">Rosemont–La Petite-Patrie</label></input>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" id="filter-dc_coverage-boroughs-code-SLR" name="dc_coverage.boroughs.code" class="custom-control-input" value="SLR"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-SLR">Saint-Laurent</label></input>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                                <input type="checkbox" id="filter-dc_coverage-boroughs-code-SLN" name="dc_coverage.boroughs.code" class="custom-control-input" value="SLN"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-SLN">Saint-Léonard</label></input>
+                                                                                                </div>
+                                                                                                </div>
+                                                                                                <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                                    <input type="checkbox" id="filter-dc_coverage-boroughs-code-VRD" name="dc_coverage.boroughs.code" class="custom-control-input" value="VRD"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-VRD">Verdun</label></input>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    <div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" id="filter-dc_coverage-boroughs-code-VM" name="dc_coverage.boroughs.code" class="custom-control-input" value="VM"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-VM">Ville-Marie</label></input>
+                                                                                                        </div></div><div class="dropdown-item"><div class="custom-control custom-checkbox">
+                                                                                                            <input type="checkbox" id="filter-dc_coverage-boroughs-code-VSMPE" name="dc_coverage.boroughs.code" class="custom-control-input" value="VSMPE"><label class="custom-control-label" for="filter-dc_coverage-boroughs-code-VSMPE">Villeray–Saint-Michel–Parc-Extension</label></input>
+                                                                                                            </div>
+                                                                                                            </div>
+                                                                                                            </fieldset>
+                                        </div>
+                                        </form>
+                                        </div>
+                                        </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="dropdown position-static">
+
+                                                {/* DATE FILTER */}
+                                                <button class="chip dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-filter-id="dc_issued" data-filter-show-selected-element="true">Date</button>
+                                                <div class="dropdown-menu dropdown-menu-form-group">
+                                                    <form class="filter-form filter-form-dropdown" method="" data-form="[{&quot;type&quot;:&quot;date&quot;,&quot;search_field&quot;:&quot;dc_issued&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;calendar&quot;,&quot;label&quot;:{&quot;singular&quot;:&quot;Date&quot;,&quot;plural&quot;:&quot;Dates&quot;},&quot;default_selection&quot;:{&quot;label&quot;:&quot;Date&quot;,&quot;value&quot;:null}},&quot;items&quot;:[{&quot;code&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;selected&quot;:false,&quot;searchField&quot;:&quot;dc_issued&quot;}],&quot;index&quot;:1}]">
+                                                        <div class="form-group mb-0">
+                                                            <div class="dropdown-item calendar-filter-wrapper">
+                                                                <input type="text" id="filter-1-dc_issued-" name="dc_issued" class="form-control date-selector d-none flatpickr-input" aria-label="Sélecteur de date" data-datetype="before" value="" readonly="readonly"></input>
+                                                                <div class="flatpickr-calendar rangeMode animate inline" tabindex="-1">
+                                                                    <div class="flatpickr-months">
+                                                                        <span class="flatpickr-prev-month">
+                                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                                                                            <g>
+                                                                                </g>
+                                                                                <path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path>
+                                                                                </svg>
+                                                                                </span>
+                                                                                <div class="flatpickr-month">
+                                                                                    <div class="flatpickr-current-month">
+                                                                                        <select class="flatpickr-monthDropdown-months" aria-label="Mois" tabindex="-1">
+                                                                                            <option class="flatpickr-monthDropdown-month" value="0" tabindex="-1">janvier</option>
+                                                                                            <option class="flatpickr-monthDropdown-month" value="1" tabindex="-1">février</option>
+                                                                                            <option class="flatpickr-monthDropdown-month" value="2" tabindex="-1">mars</option>
+                                                                                            <option class="flatpickr-monthDropdown-month" value="3" tabindex="-1">avril</option>
+                                                                                            </select><div class="numInputWrapper">
+                                                                <input class="numInput cur-year" type="number" tabindex="-1" aria-label="Année" max="2025"></input>
+                                                                <span class="arrowUp"></span><span class="arrowDown"></span>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                                <span class="flatpickr-next-month flatpickr-disabled">
+                                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                                                                    <g>
+                                                                        </g>
+                                                                        <path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path>
+                                                                        </svg>
+                                                                        </span>
+                                                                        </div>
+                                                                        <div class="flatpickr-innerContainer">
+                                                                            <div class="flatpickr-rContainer">
+                                                                                <div class="flatpickr-weekdays">
+                                                                                    <div class="flatpickr-weekdaycontainer">
+                                                                                        <span class="flatpickr-weekday">lun</span>
+                                                                                        <span class="flatpickr-weekday">mar</span>
+                                                                                            <span class="flatpickr-weekday">mer</span>
+                                                                                            <span class="flatpickr-weekday">jeu</span>
+                                                                                            <span class="flatpickr-weekday">ven</span>
+                                                                                            <span class="flatpickr-weekday">sam</span>
+                                                                                            <span class="flatpickr-weekday">dim</span>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            <div class="flatpickr-days" tabindex="-1">
+                                                                                                <div class="dayContainer">
+                                                                                                    <span class="flatpickr-day prevMonthDay" aria-label="mars 31, 2025" tabindex="-1">31</span>
+                                                                                                    <span class="flatpickr-day" aria-label="avril 1, 2025" tabindex="-1">1</span>
+                                                                                                    <span class="flatpickr-day" aria-label="avril 2, 2025" tabindex="-1">2</span>
+                                                                                                    <span class="flatpickr-day" aria-label="avril 3, 2025" tabindex="-1">3</span>
+                                                                                                    <span class="flatpickr-day" aria-label="avril 4, 2025" tabindex="-1">4</span>
+                                                                                                    <span class="flatpickr-day today" aria-label="avril 5, 2025" aria-current="date" tabindex="-1">5</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 6, 2025">6</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 7, 2025">7</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 8, 2025">8</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 9, 2025">9</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 10, 2025">10</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 11, 2025">11</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 12, 2025">12</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 13, 2025">13</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 14, 2025">14</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 15, 2025">15</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 16, 2025">16</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 17, 2025">17</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 18, 2025">18</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 19, 2025">19</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 20, 2025">20</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 21, 2025">21</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 22, 2025">22</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 23, 2025">23</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 24, 2025">24</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 25, 2025">25</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 26, 2025">26</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 27, 2025">27</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 28, 2025">28</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 29, 2025">29</span>
+                                                                                                    <span class="flatpickr-day flatpickr-disabled" aria-label="avril 30, 2025">30</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 1, 2025">1</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 2, 2025">2</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 3, 2025">3</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 4, 2025">4</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 5, 2025">5</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 6, 2025">6</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 7, 2025">7</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 8, 2025">8</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 9, 2025">9</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 10, 2025">10</span>
+                                                                                                    <span class="flatpickr-day nextMonthDay flatpickr-disabled" aria-label="mai 11, 2025">11</span>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    <div class="d-flex justify-content-center pt-2">
+                                                                                                        <button class="btn btn-squared btn-tertiary" id="clear-calendar-btn" data-item-code="true" data-item-search="dc_issued" data-item-action="remove-active-date-filter">Effacer</button>
+                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        </form>
+                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        </li>
+                                                                                                        <li class="nav-item">
+                                                                                                            <div class="dropdown position-static">
+        
+        {/* SUBJECT FILTER */}
+        <button class="chip dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-filter-id="sioc_topic.code" data-filter-show-selected-element="true">Sujet</button>
+      <div class="dropdown-menu dropdown-menu-form-group">
+        <form class="filter-form filter-form-dropdown" method="" data-form="[{&quot;type&quot;:&quot;taxonomy&quot;,&quot;id&quot;:&quot;alertsTopics&quot;,&quot;search_field&quot;:&quot;sioc_topic.code&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;multiselect&quot;,&quot;label&quot;:{&quot;singular&quot;:&quot;Sujet&quot;,&quot;plural&quot;:&quot;Sujets&quot;},&quot;default_selection&quot;:{&quot;label&quot;:&quot;Sujet&quot;,&quot;value&quot;:null}},&quot;items&quot;:[{&quot;code&quot;:&quot;circulation-transport&quot;,&quot;name&quot;:&quot;Circulation et transport&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;Installation_Sportive&quot;,&quot;name&quot;:&quot;Complexes sportifs&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;collectes-domestiques&quot;,&quot;name&quot;:&quot;Déchets et recyclage&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;deneigenement&quot;,&quot;name&quot;:&quot;Déneigement&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;eau-aqueduc&quot;,&quot;name&quot;:&quot;Eau et aqueduc&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;batiments-municipaux&quot;,&quot;name&quot;:&quot;Parcs et bâtiments municipaux&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;seances-publiques&quot;,&quot;name&quot;:&quot;Séances publiques&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;Stationnement&quot;,&quot;name&quot;:&quot;Stationnement&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false},{&quot;code&quot;:&quot;urgences&quot;,&quot;name&quot;:&quot;Urgence&quot;,&quot;searchField&quot;:&quot;sioc_topic.code&quot;,&quot;selected&quot;:false}],&quot;index&quot;:2}]">
+        <div class="form-group mb-0">
+        <fieldset><legend class="sr-only">Sujet</legend><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-circulation-transport" name="sioc_topic.code" class="custom-control-input" value="circulation-transport"><label class="custom-control-label" for="filter-2-sioc_topic-code-circulation-transport">Circulation et transport</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-Installation_Sportive" name="sioc_topic.code" class="custom-control-input" value="Installation_Sportive"><label class="custom-control-label" for="filter-2-sioc_topic-code-Installation_Sportive">Complexes sportifs</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-collectes-domestiques" name="sioc_topic.code" class="custom-control-input" value="collectes-domestiques"><label class="custom-control-label" for="filter-2-sioc_topic-code-collectes-domestiques">Déchets et recyclage</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-deneigenement" name="sioc_topic.code" class="custom-control-input" value="deneigenement"><label class="custom-control-label" for="filter-2-sioc_topic-code-deneigenement">Déneigement</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-eau-aqueduc" name="sioc_topic.code" class="custom-control-input" value="eau-aqueduc"><label class="custom-control-label" for="filter-2-sioc_topic-code-eau-aqueduc">Eau et aqueduc</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-batiments-municipaux" name="sioc_topic.code" class="custom-control-input" value="batiments-municipaux"><label class="custom-control-label" for="filter-2-sioc_topic-code-batiments-municipaux">Parcs et bâtiments municipaux</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-seances-publiques" name="sioc_topic.code" class="custom-control-input" value="seances-publiques"><label class="custom-control-label" for="filter-2-sioc_topic-code-seances-publiques">Séances publiques</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-Stationnement" name="sioc_topic.code" class="custom-control-input" value="Stationnement"><label class="custom-control-label" for="filter-2-sioc_topic-code-Stationnement">Stationnement</label></div></div><div class="dropdown-item"><div class="custom-control custom-checkbox"><input type="checkbox" id="filter-2-sioc_topic-code-urgences" name="sioc_topic.code" class="custom-control-input" value="urgences"><label class="custom-control-label" for="filter-2-sioc_topic-code-urgences">Urgence</label></div></div></fieldset>
+      
+      </div>
+      </form>
+      </div>
+      </div>
+      </li>
+      </ul>
+      </div>
+      </div>
