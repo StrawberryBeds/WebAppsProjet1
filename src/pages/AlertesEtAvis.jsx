@@ -1,15 +1,23 @@
-import Search from './../composents/Search'
-// import Filtres from './../composents/Filtres'
-import AlerteListe from './../composents/AlerteListe'
+import { useState } from 'react'
+
+import Search from '../components/Search'
+import AlerteListe from './../components/AlerteListe'
+import sample_data from './../assets/sample_data.json'
 
 function AlertesEtAvis() {
+
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleSearch = (query) => {
+        setSearchQuery(query);
+      };
+
     return (
         <>
-            <Search />
-            {/* <Filtres /> */}
-            <AlerteListe />
+            <Search onSearch={handleSearch}/>
+            <AlerteListe searchQuery={searchQuery} data={sample_data}/>
         </>
-    )
+    );
 }
 
 export default AlertesEtAvis;

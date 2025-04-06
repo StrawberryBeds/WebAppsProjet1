@@ -1,12 +1,9 @@
 import './App.css'
-import Header from './composents/Header'
-import Footer from './composents/Footer'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AlertesEtAvis from './pages/AlertesEtAvis'
 import Alerte from './pages/Alerte'
-
-import { Link } from 'react-router-dom';
-
 
 function App() {
 
