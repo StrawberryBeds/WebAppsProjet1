@@ -11,3 +11,19 @@
   align-items: center;
   gap: 10px;
 }
+
+/* Main.css */
+.main-container { 
+  display: flex;
+}
+
+.search-results {
+  display: flex;
+}
+
+/* Footer.css */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
