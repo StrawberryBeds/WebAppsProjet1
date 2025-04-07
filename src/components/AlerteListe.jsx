@@ -1,4 +1,18 @@
 import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+
+function Nav() {
+    return (
+        <nav className='nav'>
+            <ul className='bare-list nav-list'>
+                <li className='nav-item'>
+                    {/* <NavLink className={'nav-link'} to="/">Accueil</NavLink> */}
+                    <NavLink className={'nav-link'} to="/alerte">Alerte</NavLink>
+                </li>
+            </ul>
+        </nav>
+    )
+}
 
 function AlerteListe({ searchQuery, data }) {
     const [filteredItems, setFilteredItems] = useState(data?.features || []);
@@ -24,8 +38,9 @@ function AlerteListe({ searchQuery, data }) {
                         {/* <p>End Date: {new Date(feature.properties.date_fin).toLocaleString()}</p> */}
                         {/* <p>Type: {feature.properties.type}</p> */}
                         {/* <p>Publisher: {feature.properties.service_publieur}</p> */}
-                        <a href={feature.properties.lien} target="_blank" rel="noopener noreferrer"> {feature.properties.lien}
-                        </a>
+                        <Nav />
+                        {/* <a href={feature.properties.lien} target="_blank" rel="noopener noreferrer"> {feature.properties.lien}
+                        </a> */}
                     </div>
                 ))
               ) : (
