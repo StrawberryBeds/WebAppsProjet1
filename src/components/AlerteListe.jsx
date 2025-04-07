@@ -38,7 +38,11 @@ function AlerteListe({ searchQuery, data }) {
                         {/* <p>End Date: {new Date(feature.properties.date_fin).toLocaleString()}</p> */}
                         {/* <p>Type: {feature.properties.type}</p> */}
                         {/* <p>Publisher: {feature.properties.service_publieur}</p> */}
-                        <Nav />
+                        <NavLink
+                        to={`/alerte/${encodeURIComponent(feature.properties.titre)}-${feature.properties.date_debut}`}
+                        className="nav-link" 
+                        >Afficher l'alerte
+                        </NavLink>
                         {/* <a href={feature.properties.lien} target="_blank" rel="noopener noreferrer"> {feature.properties.lien}
                         </a> */}
                     </div>
