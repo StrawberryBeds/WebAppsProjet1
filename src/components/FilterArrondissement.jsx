@@ -1,51 +1,49 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
+import './FilterArrondissement.css'; // Import your CSS file for styling
 
-function FilterArrondissement({ onSearch }) {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [debouncedQuery, setDebouncedQuery] = useState('');
+function FilterArrondissements({ onSelectArrondissement }) {
+  const arrondissements = [
+    { id: 1, name: 'Ahuntsic-Cartierville' },
+    { id: 2, name: 'Anjou' },
+    { id: 3, name: 'Côte-des-Neiges–Notre-Dame-de-Grâce' },
+    { id: 4, name: 'Lachine' },
+    { id: 5, name: 'LaSalle' },
+    { id: 6, name: 'Le Plateau-Mont-Royal' },
+    { id: 7, name: 'Le Sud-Ouest' },
+    { id: 8, name: 'L’Île-Bizard–Sainte-Geneviève' },
+    { id: 9, name: 'Mercier–Hochelaga-Maisonneuve' },
+    { id: 10, name: 'Montréal-Nord' },
+    { id: 11, name: 'Outremont' },
+    { id: 12, name: 'Pierrefonds-Roxboro' },
+    { id: 13, name: 'Rivière-des-Prairies–Pointe-aux-Trembles' },
+    { id: 14, name: 'Rosemont–La Petite-Patrie' },
+    { id: 15, name: 'Saint-Laurent' },
+    { id: 16, name: 'Saint-Léonard' },
+    { id: 17, name: 'Verdun' },
+    { id: 18, name: 'Ville-Marie' },
+    { id: 19, name: 'Villeray–Saint-Michel–Parc-Extension' },
+  ];
 
-    const handleInputChange = (event) => {
-        setSearchQuery(event.target.value);
-    }
+  const handleClick = (name) => {
+    onSelectArrondissement(name);
+  };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-          setDebouncedQuery(searchQuery);
-        }, 300); // Adjust the debounce delay as needed
-    
-        return () => clearTimeout(timer);
-      }, [searchQuery]);
-    
-      // Call onSearch when debouncedQuery changes
-      useEffect(() => {
-        if (debouncedQuery !== '') {
-          onSearch(debouncedQuery);
-        }
-      }, [debouncedQuery, onSearch]);
-
-      const handleSubmit = (event) => {
-        event.preventDefault();
-        onSearch(searchQuery);
-      };
-
-    return (
-                <div className="filter-form">
-                    <form onSubmit={handleSubmit}>
-                            <div className="form-input-group">
-                                <input type="text"
-                                    className="form-control"
-                                    id="search-input"
-                                    data-query="q"
-                                    placeholder="Que cherchez-vous?"
-                                    aria-label="Recherche"
-                                    value={searchQuery}
-                                    onChange={handleInputChange}>
-                                </input>
-                                <span className="icon icon-search" aria-hidden="true"></span>
-                            </div>
-                    </form>
-                </div>
-    );
+  return (
+    <div className="dropdown">
+      <button className="dropbtn">Arrondissements</button>
+      <div className="dropdown-content">
+        {arrondissements.map((arrondissement) => (
+          <a
+            key={arrondissement.id}
+            href="#"
+            onClick={() => handleClick(arrondissement.name)}
+          >
+            {arrondissement.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default FilterArrondissement;
+export default FilterArrondissements;
