@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Search from '../components/Search'
 import AlerteListe from './../components/AlerteListe'
 import modified_sample_data from './../assets/modified_sample_data.json'
+import FilterArrondissement from '../components/FilterArrondissement';
 
 function AlertesEtAvis() {
 
@@ -15,6 +16,7 @@ function AlertesEtAvis() {
     return (
         <>
             <Search onSearch={handleSearch}/>
+            <FilterArrondissement onSearch={handleSearch}/>
             <AlerteListe searchQuery={searchQuery} data={modified_sample_data}/>
         </>
     );
