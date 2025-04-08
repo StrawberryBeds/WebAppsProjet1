@@ -1,19 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-// function Nav() {
-//     return (
-//         <nav className='nav'>
-//             <ul className='bare-list nav-list'>
-//                 <li className='nav-item'>
-//                     {/* <NavLink className={'nav-link'} to="/">Accueil</NavLink> */}
-//                     <NavLink className={'nav-link'} to="/alerte/${en}">Alerte</NavLink>
-//                 </li>
-//             </ul>
-//         </nav>
-//     )
-// }
-
 function AlerteListe({ searchQuery, data }) {
     const [filteredItems, setFilteredItems] = useState(data?.features || []);
 
