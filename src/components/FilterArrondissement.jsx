@@ -52,4 +52,4 @@ function FilterArrondissement({ onSearch }) {
     );
 }
 
-export default FilterArrondissement();
+export default FilterArrondissement;

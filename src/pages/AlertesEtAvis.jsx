@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Search from '../components/Search'
 import AlerteListe from './../components/AlerteListe'
 import modified_sample_data from './../assets/modified_sample_data.json'
-import FilterArrondissement from '../components/FilterArrondissement';
+import FilterArrondissement from '../components/FilterArrondissement'
 
 function AlertesEtAvis() {
 
