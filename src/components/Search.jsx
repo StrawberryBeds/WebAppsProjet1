@@ -11,45 +11,45 @@ function Search({ onSearch }) {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setDebouncedQuery(searchQuery);
+          setDebouncedQuery(searchQuery);
         }, 300); // Adjust the debounce delay as needed
-
+    
         return () => clearTimeout(timer);
-    }, [searchQuery]);
-
-    // Call onSearch when debouncedQuery changes
-    useEffect(() => {
+      }, [searchQuery]);
+    
+      // Call onSearch when debouncedQuery changes
+      useEffect(() => {
         if (debouncedQuery !== '') {
-            onSearch(debouncedQuery);
+          onSearch(debouncedQuery);
         }
-    }, [debouncedQuery, onSearch]);
+      }, [debouncedQuery, onSearch]);
 
-    const handleSubmit = (event) => {
+      const handleSubmit = (event) => {
         event.preventDefault();
         onSearch(searchQuery);
-    };
+      };
 
     return (
-        <div className="search-form">
-            <div className="pb-2">
-                <h1 className="search-form-title">Avis et alertes</h1>
-                <div className="search-form-purpose">Trouver un avis</div>
-            </div>
-            <form onSubmit={handleSubmit}>
-                <div className="form-input-group">
-                    <input type="text"
-                        className="form-control"
-                        id="search-input"
-                        data-query="q"
-                        placeholder="Que cherchez-vous?"
-                        aria-label="Recherche"
-                        value={searchQuery}
-                        onChange={handleInputChange}>
-                    </input>
-                    <span className="icon icon-search" aria-hidden="true"></span>
+                <div className="search-form">
+                    <div className="pb-2">
+                        <h1 className="search-form-title">Avis et alertes</h1>
+                        <div className="search-form-purpose">Trouver un avis</div>
+                    </div>
+                    <form onSubmit={handleSubmit}>
+                            <div className="form-input-group">
+                                <input type="text"
+                                    className="form-control"
+                                    id="search-input"
+                                    data-query="q"
+                                    placeholder="Que cherchez-vous?"
+                                    aria-label="Recherche"
+                                    value={searchQuery}
+                                    onChange={handleInputChange}>
+                                </input>
+                                <span className="icon icon-search" aria-hidden="true"></span>
+                            </div>
+                    </form>
                 </div>
-            </form>
-        </div>
     );
 }
 
