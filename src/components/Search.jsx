@@ -11,50 +11,44 @@ function Search({ onSearch }) {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-          setDebouncedQuery(searchQuery);
+            setDebouncedQuery(searchQuery);
         }, 300); // Adjust the debounce delay as needed
-    
-        return () => clearTimeout(timer);
-      }, [searchQuery]);
-    
-      // Call onSearch when debouncedQuery changes
-      useEffect(() => {
-        if (debouncedQuery !== '') {
-          onSearch(debouncedQuery);
-        }
-      }, [debouncedQuery, onSearch]);
 
-      const handleSubmit = (event) => {
+        return () => clearTimeout(timer);
+    }, [searchQuery]);
+
+    // Call onSearch when debouncedQuery changes
+    useEffect(() => {
+        if (debouncedQuery !== '') {
+            onSearch(debouncedQuery);
+        }
+    }, [debouncedQuery, onSearch]);
+
+    const handleSubmit = (event) => {
         event.preventDefault();
         onSearch(searchQuery);
-      };
+    };
 
     return (
-        <div className="container position-relative">
-            <div className="row document-heading-header">
-                <div className="col-12 col-lg-7 align-self-center">
-                    <div className="pb-2">
-                        <h1 className="header-full-width-title">Avis et alertes</h1>
-                        <div className="document-heading-subtitle rm-last-child-mb">Trouver un avis</div>
-                    </div>
-                    <form onSubmit={handleSubmit}>
-                        <div className="form-group form-group-lg">
-                            <div className="input-group-icon input-group-icon-left">
-                                <input type="text"
-                                    className="form-control input-rounded get-query"
-                                    id="search-input"
-                                    data-query="q"
-                                    placeholder="Que cherchez-vous?"
-                                    aria-label="Recherche"
-                                    value={searchQuery}
-                                    onChange={handleInputChange}>
-                                </input>
-                                <span className="icon icon-search" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                    </form>
+        <div className="search-form">
+            <div className="pb-2">
+                <h1 className="search-form-title">Avis et alertes</h1>
+                <div className="search-form-purpose">Trouver un avis</div>
+            </div>
+            <form onSubmit={handleSubmit}>
+                <div className="form-input-group">
+                    <input type="text"
+                        className="form-control"
+                        id="search-input"
+                        data-query="q"
+                        placeholder="Que cherchez-vous?"
+                        aria-label="Recherche"
+                        value={searchQuery}
+                        onChange={handleInputChange}>
+                    </input>
+                    <span className="icon icon-search" aria-hidden="true"></span>
                 </div>
-            </div >
+            </form>
         </div>
     );
 }
