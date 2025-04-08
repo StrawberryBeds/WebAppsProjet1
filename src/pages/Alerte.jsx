@@ -1,10 +1,10 @@
 import AlerteDetail from "../components/AlerteDetail";
-import sample_data from './../assets/sample_data.json';
+import modified_sample_data from './../assets/modified_sample_data.json';
 
 function Alerte() {
     return (
         <>
-            <AlerteDetail data={sample_data}/>
+            <AlerteDetail data={modified_sample_data}/>
         </>
     )
 }

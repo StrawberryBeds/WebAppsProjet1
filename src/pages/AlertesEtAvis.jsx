@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import Search from '../components/Search'
 import AlerteListe from './../components/AlerteListe'
-import sample_data from './../assets/sample_data.json'
+import modified_sample_data from './../assets/modified_sample_data.json'
 
 function AlertesEtAvis() {
 
@@ -15,7 +15,7 @@ function AlertesEtAvis() {
     return (
         <>
             <Search onSearch={handleSearch}/>
-            <AlerteListe searchQuery={searchQuery} data={sample_data}/>
+            <AlerteListe searchQuery={searchQuery} data={modified_sample_data}/>
         </>
     );
 }
