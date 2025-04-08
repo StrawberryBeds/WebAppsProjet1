@@ -14,20 +14,21 @@ function AlertesEtAvis() {
         setSearchQuery(query);
       };
 
-    const handleSelectSubject = (type) => {
-        setSearchQuery(type);
-      };  
+    // const handleSelectSubject = (type) => {
+    //     setSearchQuery(type);
+    //   };  
       
       const handleSelectArrondissement = (name) => {
         setSearchQuery(name);
       };
+
+      
 
     return (
         <>
             <Search onSearch={handleSearch}/>
             {/* <FilterSubject onSelectSubject={handleSelectSubject}/> */}
             <FilterArrondissement onSelectArrondissement={handleSelectArrondissement}/>
-            {/* <FilterArrondissement onSearch={handleSearch}/> */}
             <AlerteListe searchQuery={searchQuery} data={modified_sample_data}/>
         </>
     );

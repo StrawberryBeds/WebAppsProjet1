@@ -1,8 +1,8 @@
 import React from 'react';
-import './FilterArrondissement.css'; // Import your CSS file for styling
+import './FilterStyle.css'; // Import your CSS file for styling
 
 function FilterSubject({ onSelectSubject }) {
-  const subject = [
+  const subjects = [
     { id: 1, type: 'Circulation et transport' },
     { id: 2, type: 'Complexes sportifs' },
     { id: 3, type: 'Déchets et recyclage' },
@@ -21,7 +21,7 @@ function FilterSubject({ onSelectSubject }) {
     <div classtype="dropdown">
       <button classtype="dropbtn">Sujet</button>
       <div classtype="dropdown-content">
-        {subject.map((subject) => (
+        {subjects.map((subject) => (
           <a
             key={subject.id}
             href="#"
