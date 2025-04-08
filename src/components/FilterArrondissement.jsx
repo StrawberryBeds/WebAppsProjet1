@@ -29,11 +29,7 @@ function FilterArrondissement({ onSearch }) {
       };
 
     return (
-                <div className="search-form">
-                    <div className="pb-2">
-                        <h1 className="search-form-title">Avis et alertes</h1>
-                        <div className="search-form-purpose">Trouver un avis</div>
-                    </div>
+                <div className="filter-form">
                     <form onSubmit={handleSubmit}>
                             <div className="form-input-group">
                                 <input type="text"
