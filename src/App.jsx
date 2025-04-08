@@ -13,7 +13,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<AlertesEtAvis />} />
-        <Route path='/alerte' element={<Alerte />} />
+        <Route path="/alerte/:id" element={<Alerte />} />
       </Routes>
 
       {/* <Main></Main>

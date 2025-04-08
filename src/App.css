@@ -19,6 +19,10 @@
   display: flex;
 }
 
+position-relative {
+  position: relative !important;
+}
+
 .search-results {
   display: flex;
 }

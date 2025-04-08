@@ -26,7 +26,7 @@ function Search({ onSearch }) {
 
       const handleSubmit = (event) => {
         event.preventDefault();
-        onSearch(searchQuery); // Fallback to submit behavior
+        onSearch(searchQuery);
       };
 
     return (
