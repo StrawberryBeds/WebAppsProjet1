@@ -18,9 +18,9 @@ function FilterSubject({ onSelectSubject }) {
   };
 
   return (
-    <div classtype="dropdown">
-      <button classtype="dropbtn">Sujet</button>
-      <div classtype="dropdown-content">
+    <div className="dropdown">
+      <button className="dropbtn">Sujet</button>
+      <div className="dropdown-content">
         {subjects.map((subject) => (
           <a
             key={subject.id}

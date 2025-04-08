@@ -4,7 +4,7 @@ import Search from '../components/Search'
 import AlerteListe from './../components/AlerteListe'
 import modified_sample_data from './../assets/modified_sample_data.json'
 import FilterArrondissement from '../components/FilterArrondissement'
-// import FilterSubject from '../components/FilterSubject'
+import FilterSubject from '../components/FilterSubject'
 
 function AlertesEtAvis() {
 
@@ -14,9 +14,9 @@ function AlertesEtAvis() {
         setSearchQuery(query);
       };
 
-    // const handleSelectSubject = (type) => {
-    //     setSearchQuery(type);
-    //   };  
+    const handleSelectSubject = (type) => {
+        setSearchQuery(type);
+      };  
       
       const handleSelectArrondissement = (name) => {
         setSearchQuery(name);
@@ -27,7 +27,7 @@ function AlertesEtAvis() {
     return (
         <>
             <Search onSearch={handleSearch}/>
-            {/* <FilterSubject onSelectSubject={handleSelectSubject}/> */}
+            <FilterSubject onSelectSubject={handleSelectSubject}/>
             <FilterArrondissement onSelectArrondissement={handleSelectArrondissement}/>
             <AlerteListe searchQuery={searchQuery} data={modified_sample_data}/>
         </>

@@ -14,19 +14,6 @@
   align-items: center;
 }
 
-/* Main.css */
-.main-container { 
-  display: flex;
-}
-
-position-relative {
-  position: relative !important;
-}
-
-.search-results {
-  display: flex;
-}
-
 /* Footer.css */
 .footer-container {
   display: flex;

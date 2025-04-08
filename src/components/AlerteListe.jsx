@@ -18,6 +18,7 @@ function AlerteListe({ searchQuery, data }) {
 
     return (
             <div>
+              {/* This can be put inside the NavLink to conform to the reference site. */}
                 {filteredItems.length > 0 ? ( 
                 filteredItems.map((feature) => (
                     <div key={feature.id}>

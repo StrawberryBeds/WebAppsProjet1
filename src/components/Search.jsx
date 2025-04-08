@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './SearchStyle.css';
 
 function Search({ onSearch, initialQuery = '' }) {
   const [searchQuery, setSearchQuery] = useState(initialQuery);
@@ -30,7 +31,7 @@ function Search({ onSearch, initialQuery = '' }) {
 
   return (
     <div className="search-form">
-      <div className="pb-2">
+      <div className="search-form-header">
         <h1 className="search-form-title">Avis et alertes</h1>
         <div className="search-form-purpose">Trouver un avis</div>
       </div>
