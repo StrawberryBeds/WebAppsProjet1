@@ -11,11 +11,14 @@ import { NavLink } from 'react-router-dom';
 function Header() {
 
     return (
+      <div className="header">
       <div className="navbar">
+
         <NavLink to="/">
         <h1>Montréal</h1>
         </NavLink>
           <img src={favicon32} className="logo react" alt="Montréal logo" />
+
         <RxHamburgerMenu />
         <p>Menu</p>
         <CiSearch />
@@ -23,6 +26,7 @@ function Header() {
         <RiAccountCircleLine />
         <p>Mon Compte</p> 
         </div> 
+        </div>
     )
 }
 

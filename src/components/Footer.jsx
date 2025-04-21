@@ -1,6 +1,10 @@
+import React from 'react';
+import './Footer.css';
+
 function Footer() {
     return (
         <>
+        <div className="footer-container">
             <div className="d-flex font-size-xs-interface pb-1 pb-md-2">
                 <a href="#main-content" className="link-page-top ml-auto shell-scroll-trigger">Haut de page</a>
             </div>
@@ -143,6 +147,7 @@ function Footer() {
                     </div>
                 </nav>
             </div >
+            </div>
         </>
     )
 }

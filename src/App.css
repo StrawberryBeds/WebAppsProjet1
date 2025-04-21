@@ -1,3 +1,4 @@
+/* App.css */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,24 +6,10 @@
   text-align: center;
 }
 
-.navbar {
-  display: flex;
-  background-color: #fff;
-  border-bottom: 1px solid #ced4da;
-  padding: .5rem 1rem;
-  z-index: 1030;
-  align-items: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
-/* Footer.css */
-.footer-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-/* .row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-} */
+

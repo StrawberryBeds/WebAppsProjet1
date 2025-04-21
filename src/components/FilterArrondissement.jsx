@@ -1,5 +1,5 @@
 import React from 'react';
-import './FilterStyle.css'; // Import your CSS file for styling
+import './Filter.css'; // Import your CSS file for styling
 
 function FilterArrondissements({ onSelectArrondissement }) {
   const arrondissements = [
