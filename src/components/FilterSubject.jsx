@@ -1,5 +1,5 @@
 import React from 'react';
-import './Filter.css'; // Import your CSS file for styling
+import './Filters.css'; // Import your CSS file for styling
 
 function FilterSubject({ onSelectSubject }) {
   const subjects = [

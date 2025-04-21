@@ -1,8 +1,37 @@
-.navbar {
-    display: flex;
-    background-color: #fff;
-    border-bottom: 1px solid #ced4da;
-    padding: .5rem 1rem;
-    z-index: 1030;
-    align-items: center;
-  }
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  gap: 1rem; /* Space between organization name and logo */
+}
+
+.header-right {
+  gap: 1rem; /* Space between hamburger menu, search icon, and my account icon */
+}
+
+/* Optional: Add some basic styling for better visualization */
+.organization-name {
+  color: black;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+
+.logo,
+.hamburger-menu,
+.search-icon,
+.my-account-icon {
+  font-size: 1.2rem;
+}
