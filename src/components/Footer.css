@@ -1,12 +1,50 @@
 /* Footer.css */
-.footer-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
 
-  /* .row {
+.back-to-top {
+  display: flex;
+  align-items: right;
+  cursor: pointer;
+}
+
+.row {
   display: flex;
   align-items: center;
   gap: 10px;
-} */
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.footer-end-left,
+.footer-end-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-end-left {
+  gap: 1rem; /* Space between organization name and logo */
+}
+
+.footer-end-right {
+  gap: 1rem; /* Space between hamburger menu, search icon, and my account icon */
+}
+
+/* Optional: Add some basic styling for better visualization */
+.organization-name {
+  color: black;
+  font-size: 2.0rem;
+  font-weight: bold;
+}

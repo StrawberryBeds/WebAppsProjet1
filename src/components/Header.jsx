@@ -18,7 +18,7 @@ function Header() {
     <NavLink to="/">
       <div className="organization-name">Montréal</div>
       </NavLink>
-      <img src={favicon32} className="logo react" alt="Montréal logo" />
+      <img src={favicon32} className="montreal logo" alt="Montréal logo" />
       <RxHamburgerMenu />
       <p>Menu</p>
     </div>
