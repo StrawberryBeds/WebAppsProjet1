@@ -1,0 +1,20 @@
+/* AsideGrid.css */
+.aside-grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Two columns: 1fr for the aside, 3fr for the main content */
+    gap: 1rem;
+  }
+  
+  .aside {
+    background-color: #f0f0f0;
+    padding: 1rem;
+  }
+  
+  .main-content {
+    background-color: #ffffff;
+    padding: 1rem;
+  }
+  
+  
+
+  
