@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './AlerteListe.css';
 import { NavLink } from 'react-router-dom';
 
 function AlerteListe({ searchQuery, data }) {
@@ -17,10 +18,11 @@ function AlerteListe({ searchQuery, data }) {
       
 
     return (
-            <div>
+      <div className="alertes-container">
               {/* This can be put inside the NavLink to conform to the reference site. */}
                 {filteredItems.length > 0 ? ( 
                 filteredItems.map((feature) => (
+                  <div className="alerte">
                     <div key={feature.id}>
                         <h3>{feature.properties.titre}</h3>
                         {/* <p>Start Date: {new Date(feature.properties.date_debut).toLocaleString()}</p> */}
@@ -35,6 +37,7 @@ function AlerteListe({ searchQuery, data }) {
 
                         {/* <a href={feature.properties.lien} target="_blank" rel="noopener noreferrer"> {feature.properties.lien}
                         </a> */}
+                        </div>
                     </div>
                 ))
               ) : (

@@ -1,0 +1,11 @@
+.alertes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three equal-width columns */
+    gap: 1rem; /* Space between grid items */
+  }
+  
+  .alerte {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+  }
