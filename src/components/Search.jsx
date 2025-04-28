@@ -47,7 +47,7 @@ function Search({ onSearch, initialQuery = '' }) {
             value={searchQuery}
             onChange={handleInputChange}
           />
-          <span className="icon icon-search" aria-hidden="true"></span>
+      
         </div>
       </form>
     </div>
