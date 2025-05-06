@@ -1,35 +1,30 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Search from '../components/Search';
+import AlerteListe from '../components/AlerteListe';
+import FilterArrondissement from '../components/FilterArrondissement';
+import FilterSubject from '../components/FilterSubject';
 
-import Search from '../components/Search'
-import AlerteListe from './../components/AlerteListe'
-import modified_sample_data from './../assets/modified_sample_data.json'
-import FilterArrondissement from '../components/FilterArrondissement'
-import FilterSubject from '../components/FilterSubject'
-
-function AlertesEtAvis() {
-
+function AlertesEtAvis({ apiData }) {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearch = (query) => {
         setSearchQuery(query);
-      };
+    };
 
     const handleSelectSubject = (type) => {
         setSearchQuery(type);
-      };  
-      
-      const handleSelectArrondissement = (name) => {
-        setSearchQuery(name);
-      };
+    };
 
-      
+    const handleSelectArrondissement = (name) => {
+        setSearchQuery(name);
+    };
 
     return (
         <>
-            <Search onSearch={handleSearch}/>
-            <FilterSubject onSelectSubject={handleSelectSubject}/>
-            <FilterArrondissement onSelectArrondissement={handleSelectArrondissement}/>
-            <AlerteListe searchQuery={searchQuery} data={modified_sample_data}/>
+            <Search onSearch={handleSearch} />
+            <FilterSubject onSelectSubject={handleSelectSubject} />
+            <FilterArrondissement onSelectArrondissement={handleSelectArrondissement} />
+            {apiData && <AlerteListe searchQuery={searchQuery} data={apiData} />}
         </>
     );
 }

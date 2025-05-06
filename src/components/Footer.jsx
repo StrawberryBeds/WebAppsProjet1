@@ -132,7 +132,7 @@ function Footer() {
 
                     <div className="footer-end-right">
                         <nav>
-                                <a href className="cky-banner-element btn btn-as-link">Fichiers témoins</a>
+                                <p>Fichiers témoins</p>
                                 <a href="/sujets/politique-de-confidentialite">Politique de confidentialité</a>
                                 <a href="/articles/mentions-legales">Mentions légales</a>
                         </nav>

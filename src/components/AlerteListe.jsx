@@ -3,43 +3,40 @@ import './AlerteListe.css';
 import { NavLink } from 'react-router-dom';
 
 function AlerteListe({ searchQuery, data }) {
-  const [filteredItems, setFilteredItems] = useState(data?.features || []);
+  const [filteredItems, setFilteredItems] = useState([]); // Default to an empty array
 
   useEffect(() => {
-    if (searchQuery) {
-      const filtered = data.features.filter((feature) =>
-        feature.properties.titre.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      setFilteredItems(filtered);
+    console.log("Data received:", data);
+    if (data && data.result && data.result.records) {
+      const records = data.result.records;
+      if (searchQuery) {
+        const filtered = records.filter((item) =>
+          item.titre.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+        setFilteredItems(filtered);
+      } else {
+        setFilteredItems(records);
+      }
     } else {
-      setFilteredItems(data.features);
+      setFilteredItems([]);
     }
+    console.log("Filtered items:", filteredItems);
   }, [searchQuery, data]);
-
 
   return (
     <div className="alertes-container">
-      {/* This can be put inside the NavLink to conform to the reference site. */}
-      {filteredItems.length > 0 ? (
-        filteredItems.map((feature) => (
-          <div className="alerte">
-            <NavLink
-              to={`/alerte/${feature.id}`}
-              className="nav-link"
-            >
-              <div key={feature.id}>
-                <h3>{feature.properties.titre}</h3>
-                {/* <p>Start Date: {new Date(feature.properties.date_debut).toLocaleString()}</p> */}
-                {/* <p>End Date: {new Date(feature.properties.date_fin).toLocaleString()}</p> */}
-                {/* <p>Type: {feature.properties.type}</p> */}
-                {/* <p>Publisher: {feature.properties.service_publieur}</p> */}
+      {filteredItems && filteredItems.length > 0 ? ( // Check if filteredItems is defined
+        filteredItems.map((item) => (
+          <div className="alerte" key={item._id}>
+            <NavLink to={`/alerte/${item._id}`} className="nav-link">
+              <div>
+                <h3>{item.titre}</h3>
                 Afficher l'alerte
               </div>
             </NavLink>
-
-            {/* <a href={feature.properties.lien} target="_blank" rel="noopener noreferrer"> {feature.properties.lien}
-                        </a> */}
-
+            <NavLink to={String(item.lien)} target="_blank" rel="noopener noreferrer">
+              {item.lien}
+            </NavLink>
           </div>
         ))
       ) : (
