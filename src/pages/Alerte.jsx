@@ -4,9 +4,10 @@ import AlerteDetail from '../components/AlerteDetail';
 function Alerte({ apiData }) {
     const { id } = useParams();
     console.log("Alert ID from URL:", id);
+    console.log("API Data received:", apiData); // Debug statement
 
-    const alert = apiData?.features.find(
-        (feature) => feature.id === parseInt(id, 10)
+    const alert = apiData?.result?.records?.find(
+        (item) => item._id === parseInt(id, 10)
     );
 
     console.log("Filtered Alert Data:", alert);

@@ -34,9 +34,9 @@ function AlerteListe({ searchQuery, data }) {
                 Afficher l'alerte
               </div>
             </NavLink>
-            <NavLink to={String(item.lien)} target="_blank" rel="noopener noreferrer">
+            {/* <NavLink to={String(item.lien)} target="_blank" rel="noopener noreferrer">
               {item.lien}
-            </NavLink>
+            </NavLink> */}
           </div>
         ))
       ) : (
