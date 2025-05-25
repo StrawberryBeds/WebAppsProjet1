@@ -11,7 +11,7 @@ function AlerteListe({ searchQuery, data }) {
       const records = data.result.records;
       if (searchQuery) {
         const filtered = records.filter((item) =>
-          item.titre.toLowerCase().includes(searchQuery.toLowerCase())
+          item.titre.toLowerCase().includes(searchQuery.toLowerCase()) || item.type.toLowerCase().includes(searchQuery.toLowerCase())
         );
         setFilteredItems(filtered);
       } else {
@@ -34,9 +34,6 @@ function AlerteListe({ searchQuery, data }) {
                 Afficher l'alerte
               </div>
             </NavLink>
-            {/* <NavLink to={String(item.lien)} target="_blank" rel="noopener noreferrer">
-              {item.lien}
-            </NavLink> */}
           </div>
         ))
       ) : (

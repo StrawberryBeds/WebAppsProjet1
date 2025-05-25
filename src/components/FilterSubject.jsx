@@ -15,6 +15,7 @@ function FilterSubject({ onSelectSubject }) {
 
   const handleClick = (type) => {
     onSelectSubject(type);
+    console.log("Data filtered by subject:", type);
   };
 
   return (

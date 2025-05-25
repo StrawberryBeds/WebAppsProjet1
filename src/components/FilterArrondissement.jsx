@@ -26,6 +26,7 @@ function FilterArrondissements({ onSelectArrondissement }) {
 
   const handleClick = (name) => {
     onSelectArrondissement(name);
+    console.log("Data filtered by arronidissement:", name);
   };
 
   return (
