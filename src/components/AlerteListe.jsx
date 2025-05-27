@@ -24,21 +24,26 @@ function AlerteListe({ searchQuery, data }) {
   }, [searchQuery, data]);
 
   return (
-    <div className="alertes-container">
-      {filteredItems && filteredItems.length > 0 ? ( // Check if filteredItems is defined
-        filteredItems.map((item) => (
-          <div className="alerte" key={item._id}>
-            <NavLink to={`/alerte/${item._id}`} className="nav-link">
-              <div>
-                <h3>{item.titre}</h3>
-                Afficher l'alerte
-              </div>
-            </NavLink>
-          </div>
-        ))
-      ) : (
-        <p>Rien à afficher</p>
-      )}
+    <div className="aside-grid-container">
+      <div className="alertes-container">
+        {filteredItems && filteredItems.length > 0 ? ( // Check if filteredItems is defined
+          filteredItems.map((item) => (
+            <div className="alerte" key={item._id}>
+              <NavLink to={`/alerte/${item._id}`} className="nav-link">
+                <div>
+                  <h3>{item.titre}</h3>
+                  Afficher l'alerte
+                </div>
+              </NavLink>
+            </div>
+          ))
+        ) : (
+          <p>Rien à afficher</p>
+        )}
+      </div>
+      <aside className="aside">
+        <h3>S'abonner aux alertes</h3>
+      </aside>
     </div>
   );
 }
