@@ -1,18 +1,16 @@
 function parseDate(strDate, timezone = 'EDT') {
     if (typeof strDate !== 'string') {
-        console.warn("Date received is not a string.");
-        return strDate;
+        console.warn("Date received is not a string:", strDate);
+        return new Date(strDate); // Attempt to create a date anyway
     }
 
-    return new Date(`${strDate.trim()} ${timezone}`);
+    const date = new Date(`${strDate.trim()} ${timezone}`);
+    if (isNaN(date)) {
+        console.warn("Invalid date string:", strDate);
+    }
+    return date;
 }
 
-/**
- * Compare deux dates utilisant le format AAAA-MM-JJ
- * @param {string} date1 
- * @param {string} date2 
- * @returns {Number} `1 si date2 > date1`; `-1 si date2 < date1`; `0 si date2 = date1` 
- */
 export function compareDate(date1, date2) {
     const d1 = parseDate(date1);
     const d2 = parseDate(date2);
@@ -27,16 +25,20 @@ export function compareDate(date1, date2) {
     return 0;
 }
 
-/**
- * Vérifie si une date cible se trouve dans l'intervalle [start, end]
- * @param {string} target - La date à vérifier
- * @param {string} start - La date de début de l'intervalle
- * @param {string} end - La date de fin de l'intervalle
- * @returns {boolean} true si la date cible est dans l'intervalle, sinon false
- */
 export function isWithin(target, start, end) {
-    return compareDate(start, target) <= 0 && compareDate(target, end) <= 0;
+    try {
+        console.log("Target:", target, "Start:", start, "End:", end); // Debugging log
+        const targetDate = parseDate(target);
+        const startDate = parseDate(start);
+        const endDate = parseDate(end);
+
+        return compareDate(start, target) <= 0 && compareDate(target, end) <= 0;
+    } catch (error) {
+        console.error("Error in isWithin function:", error);
+        return false;
+    }
 }
+
 
 /**
  * Vérifie si une date est avant une autre

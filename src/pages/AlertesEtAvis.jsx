@@ -1,3 +1,4 @@
+// AlertesEtAvis.js
 import { useState } from 'react';
 import Search from '../components/Search';
 import AlerteListe from '../components/AlerteListe';
@@ -7,6 +8,8 @@ import FilterDates from '../components/FilterDates';
 
 function AlertesEtAvis({ apiData }) {
     const [searchQuery, setSearchQuery] = useState('');
+    const [startDate, setStartDate] = useState('');
+    const [endDate, setEndDate] = useState('');
 
     const handleSearch = (query) => {
         setSearchQuery(query);
@@ -20,16 +23,18 @@ function AlertesEtAvis({ apiData }) {
         setSearchQuery(name);
     };
 
-    // const handleSelectDates = (startDate, endDate) =>
-    //     setSearchQuery(startDate, endDate)
+    const handleSelectDates = (startDate, endDate) => {
+        setStartDate(startDate);
+        setEndDate(endDate);
+    };
 
     return (
         <>
             <Search onSearch={handleSearch} />
             <FilterSubject onSelectSubject={handleSelectSubject} />
             <FilterArrondissement onSelectArrondissement={handleSelectArrondissement} />
-            {/* <FilterDates onSelectDates={handleSelectDates} /> */}
-            {apiData && <AlerteListe searchQuery={searchQuery} data={apiData} />}
+            <FilterDates onSelectDates={handleSelectDates} />
+            {apiData && <AlerteListe searchQuery={searchQuery} data={apiData} startDate={startDate} endDate={endDate} />}
         </>
     );
 }
