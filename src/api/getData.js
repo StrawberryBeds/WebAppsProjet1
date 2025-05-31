@@ -26,15 +26,15 @@ const GetData = ({ setApiData }) => {
             });
     }, [setApiData]);
 
-    if (loading) {
-        return <div>Chargement...</div>;
-    }
+    // if (loading) {
+    //     return <div>Chargement...</div>;
+    // }
 
-    if (error) {
-        return <div>Erreur : {error.message}</div>;
-    }
+    // if (error) {
+    //     return <div>Erreur : {error.message}</div>;
+    // }
 
-    return null; // Return null since we're only using this component to fetch data
+    // return null; // Return null since we're only using this component to fetch data
 };
 
 export default GetData;

@@ -6,7 +6,7 @@ import { isAfter, isBefore, isWithin } from './utils/datefns.js';
 import AlertesEtAvis from './pages/AlertesEtAvis';
 import Alerte from './pages/Alerte';
 import { useState } from 'react';
-import GetData from './api/getData.jsx'; // Ensure correct import
+import GetData from './api/getData.js'; // Ensure correct import
 
 function App() {
     const [apiData, setApiData] = useState(null);
