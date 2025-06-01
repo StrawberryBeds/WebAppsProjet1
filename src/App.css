@@ -1,7 +1,7 @@
-/* src/App.css */
+/* src/App.css
 
 /* Root and Base Styles */
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -12,9 +12,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-body {
+/* body {
   font-family: inherit;
   background-color: #f8f9fa;
   display: flex;
@@ -30,16 +30,16 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 /* Typography */
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
+} */
 
 /* Links */
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -47,10 +47,10 @@ a {
 
 a:hover {
   color: #535bf2;
-}
+} */
 
 /* Buttons */
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -69,10 +69,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 /* Color Scheme */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -85,17 +85,17 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 /* Responsive Design */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   body {
     font-size: 16px;
   }
-}
+} */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body {
     font-size: 18px;
   }
-}
+} */
