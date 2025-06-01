@@ -6,45 +6,85 @@
   align-items: center;
   padding: 1rem;
   background-color: #f8f9fa;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .back-to-top {
-  display: flex;
-  align-items: right;
+  align-self: flex-end;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
 .footer-end {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: #f8f9fa;
+  width: 100%;
 }
 
 .footer-end-left,
 .footer-end-right {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .footer-end-left {
-  gap: 1rem; /* Space between organization name and logo */
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-end-right {
-  gap: 1rem; /* Space between hamburger menu, search icon, and my account icon */
+  gap: 1rem;
 }
 
 /* Optional: Add some basic styling for better visualization */
 .organization-name {
   color: black;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.5rem;
+  }
+
+  .back-to-top {
+    align-self: center;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-end {
+    flex-direction: column;
+  }
+
+  .footer-end-left,
+  .footer-end-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .organization-name {
+    font-size: 1.2rem;
+  }
 }
