@@ -24,7 +24,21 @@ self.addEventListener('fetch', event => {
         if (response) {
           return response;
         }
-        return fetch(event.request);
+        return fetch(event.request)
+          .then(response => {
+            // Clone the response to store it in the cache
+            const responseClone = response.clone();
+            caches.open(CACHE_NAME)
+              .then(cache => {
+                cache.put(event.request, responseClone);
+              });
+            return response;
+          })
+          .catch(() => {
+            // Handle the error, e.g., by returning a fallback response
+            return caches.match('/offline.html');
+          });
       })
   );
 });
+
