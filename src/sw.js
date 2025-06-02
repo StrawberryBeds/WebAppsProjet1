@@ -1,6 +1,8 @@
-// src/sw.js
+// Import necessary Workbox modules
 import { precacheAndRoute } from 'workbox-precaching';
 
-self.__WB_MANIFEST; // This line is necessary for the manifest injection
+// This line is necessary for the manifest injection
+self.__WB_MANIFEST;
 
+// Precaching the assets
 precacheAndRoute(self.__WB_MANIFEST);
