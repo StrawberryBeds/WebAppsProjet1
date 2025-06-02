@@ -43,7 +43,7 @@ function AlertesEtAvis({ apiData }) {
                 <FilterSubject onSelectSubject={handleSelectSubject} />
                 <FilterArrondissement onSelectArrondissement={handleSelectArrondissement} />
                 <FilterDates onSelectDates={handleSelectDates} />
-                            <ClearFilters onClear={handleClear} />
+                <ClearFilters onClear={handleClear} />
                 {apiData && <AlerteListe searchQuery={searchQuery} data={apiData} startDate={startDate} endDate={endDate} />}
             </div>
         </div>

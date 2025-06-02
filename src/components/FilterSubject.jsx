@@ -1,5 +1,6 @@
 
 import './Filters.css'; // Import your CSS file for styling
+// import ClearFilters from './ClearFilters';
 
 function FilterSubject({ onSelectSubject }) {
   const subjects = [
@@ -17,6 +18,11 @@ function FilterSubject({ onSelectSubject }) {
     onSelectSubject(type);
     console.log("Data filtered by subject:", type);
   };
+
+  //     // Reset search query
+  // useEffect(() => {
+  //   setSearchQuery(initialQuery);
+  // }, [initialQuery]);
 
   return (
     <div className="dropdown">

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Search.css';
+// import ClearFilters from './ClearFilters';
 
 function Search({ onSearch, initialQuery = '' }) {
   const [searchQuery, setSearchQuery] = useState(initialQuery);
@@ -30,9 +31,9 @@ function Search({ onSearch, initialQuery = '' }) {
   };
 
   // Reset search query
-  useEffect(() => {
-    setSearchQuery(initialQuery);
-  }, [initialQuery]);
+  // useEffect(() => {
+  //   setSearchQuery(initialQuery);
+  // }, [initialQuery]);
 
   return (
     <div className="search-form">

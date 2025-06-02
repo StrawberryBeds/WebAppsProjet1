@@ -1,5 +1,6 @@
 import React from 'react';
 import './Filters.css'; // Import your CSS file for styling
+// import ClearFilters from './ClearFilters';
 
 function FilterArrondissements({ onSelectArrondissement }) {
   const arrondissements = [
@@ -28,6 +29,11 @@ function FilterArrondissements({ onSelectArrondissement }) {
     onSelectArrondissement(name);
     console.log("Data filtered by arronidissement:", name);
   };
+
+    // Reset search query
+  // useEffect(() => {
+  //   setSearchQuery(initialQuery);
+  // }, [initialQuery]);
 
   return (
     <div className="dropdown">
