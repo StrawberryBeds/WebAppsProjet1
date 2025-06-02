@@ -1,32 +1,17 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { VitePWA } from 'vite-plugin-pwa';
+import path from 'path'
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    VitePWA({
-      strategies: 'injectManifest',
-      srcDir: 'src',
-      filename: 'service-worker.js',
-      swSrc: 'src/sw.js',
-      swDest: 'dist/service-worker.js',
-      injectManifest: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
-      },
-      manifest: {
-        name: 'My App',
-        short_name: 'MyApp',
-        description: 'My Awesome App description',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: 'path/to/your/icon.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-        ],
-      },
-    }),
-  ],
-});
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@src": path.resolve(__dirname, "./src"),
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
+      "@components": path.resolve(__dirname, "./src/components"),
+      "@utils": path.resolve(__dirname, "./src/utils"),
+      // "@layout": path.resolve(__dirname, "./src/layout"),
+    }
+  }
+})
