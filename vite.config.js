@@ -7,9 +7,9 @@ export default defineConfig({
     react(),
     VitePWA({
       strategies: 'injectManifest',
-      srcDir: '',
+      srcDir: 'src',
       filename: 'service-worker.js',
-      swSrc: 'service-worker.js', // Source file
+      swSrc: 'src/sw.js', // Source file
       swDest: 'dist/service-worker.js', // Destination file
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
