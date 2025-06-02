@@ -10,6 +10,10 @@ app.use(express.json())
 app.use(cors())
 app.use(morgan())
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the WebAppsProject1 API!');
+});
+
 app.use('/api/WebAppsProject1', alertRouter)
 
 
