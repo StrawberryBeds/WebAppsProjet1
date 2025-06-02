@@ -9,8 +9,8 @@ export default defineConfig({
       strategies: 'injectManifest',
       srcDir: 'src',
       filename: 'service-worker.js',
-      swSrc: 'src/sw.js', // Source file
-      swDest: 'dist/service-worker.js', // Destination file
+      swSrc: 'src/sw.js', // Ensure this is correctly set to 'src/sw.js'
+      swDest: 'dist/service-worker.js',
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
       },
@@ -25,7 +25,6 @@ export default defineConfig({
             sizes: '192x192',
             type: 'image/png',
           },
-          // Add more icon sizes as needed
         ],
       },
     }),
