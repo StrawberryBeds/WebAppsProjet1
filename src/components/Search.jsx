@@ -29,6 +29,11 @@ function Search({ onSearch, initialQuery = '' }) {
     onSearch(searchQuery);
   };
 
+  // Reset search query
+  useEffect(() => {
+    setSearchQuery(initialQuery);
+  }, [initialQuery]);
+
   return (
     <div className="search-form">
       <div className="search-form-header">
@@ -47,7 +52,7 @@ function Search({ onSearch, initialQuery = '' }) {
             value={searchQuery}
             onChange={handleInputChange}
           />
-      
+
         </div>
       </form>
     </div>

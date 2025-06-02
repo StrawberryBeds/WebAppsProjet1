@@ -5,6 +5,7 @@ import AlerteListe from '../components/AlerteListe';
 import FilterArrondissement from '../components/FilterArrondissement';
 import FilterSubject from '../components/FilterSubject';
 import FilterDates from '../components/FilterDates';
+import ClearFilters from '../components/ClearFilters';
 
 function AlertesEtAvis({ apiData }) {
     const [searchQuery, setSearchQuery] = useState('');
@@ -28,14 +29,24 @@ function AlertesEtAvis({ apiData }) {
         setEndDate(endDate);
     };
 
+    const handleClear = () => {
+        setSearchQuery('');
+        setSelectedArrondissement('');
+        setSelectedSubject('');
+        setDates({ startDate: '', endDate: '' });
+    };
+
     return (
-        <>
-            <Search onSearch={handleSearch} />
-            <FilterSubject onSelectSubject={handleSelectSubject} />
-            <FilterArrondissement onSelectArrondissement={handleSelectArrondissement} />
-            <FilterDates onSelectDates={handleSelectDates} />
-            {apiData && <AlerteListe searchQuery={searchQuery} data={apiData} startDate={startDate} endDate={endDate} />}
-        </>
+        <div>
+            <div>
+                <Search onSearch={handleSearch} />
+                <FilterSubject onSelectSubject={handleSelectSubject} />
+                <FilterArrondissement onSelectArrondissement={handleSelectArrondissement} />
+                <FilterDates onSelectDates={handleSelectDates} />
+                            <ClearFilters onClear={handleClear} />
+                {apiData && <AlerteListe searchQuery={searchQuery} data={apiData} startDate={startDate} endDate={endDate} />}
+            </div>
+        </div>
     );
 }
 

@@ -2,6 +2,7 @@
 import React from 'react';
 import './Filters.css';
 import { useState } from 'react';
+import ClearFilters from './ClearFilters';
 
 function FilterDates({ onSelectDates }) {
     const [startDate, setStartDate] = useState('');
