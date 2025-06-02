@@ -9,7 +9,7 @@ import App from './App.jsx';
 function registerSW() {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('.frontend/src/sw.js')
+            navigator.serviceWorker.register('.frontend/public/sw.js')
                 .then((registration) => {
                     console.log('Service worker ready! Scope: ', registration.scope);
                     registration.update();
