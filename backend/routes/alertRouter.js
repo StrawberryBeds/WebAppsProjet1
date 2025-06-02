@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { updateCollection, getAlertById } = require('../db/alertCollection');
 
-const API_URL = 'https://donnees.montreal.ca/api/3/action/datastore_search?resource_id=d617b942-7bdf-4e8e-87e9-0bc9b3a088c0';
+const API_URL = 'https://donnees.montreal.ca/api/3/action/datastore_search?resource_id=fc6e5f85-7eba-451c-8243-bdf35c2ab336';
 
 router.get('/', async (req, res) => {
     try {
