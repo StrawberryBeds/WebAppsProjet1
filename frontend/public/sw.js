@@ -1,16 +1,16 @@
-// src/sw.js
+// public/sw.js
 const CACHE_VERSION = 'v2';
 const CACHE_NAME = `WebAppsProject1-cache-${CACHE_VERSION}`;
 const STATIC_CACHE = `WebAppsProject1-static-${CACHE_VERSION}`;
 
 // Assets to cache - Vite-specific paths
 const urlsToCache = [
-    'frontend/',
-    'frontend/index.html',
-    'frontend/assets/index-i-llb7BG.css',  // Vite's default CSS output path
-    'frontend/assets/index-BTnlrKcu.js',   // Vite's default JS output path
-    'frontend/manifest.json',
-    'frontend/vite.svg',
+    '/',
+    '/index.html',
+    '/assets/index-i-llb7BG.css',  // Vite's default CSS output path
+    '/assets/index-BTnlrKcu.js',   // Vite's default JS output path
+    '/manifest.json',
+    '/vite.svg',
     // Add any other static assets your app needs
 ];
 
