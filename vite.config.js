@@ -9,7 +9,7 @@ export default defineConfig({
       strategies: 'injectManifest',
       srcDir: 'src',
       filename: 'service-worker.js',
-      swSrc: 'src/sw.js', // Ensure this is correctly set to 'src/sw.js'
+      swSrc: 'src/sw.js',
       swDest: 'dist/service-worker.js',
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
